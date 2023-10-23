@@ -5,10 +5,10 @@ class MenuItems extends Component {
     render() {
         return (
             <ul className={this.props.state.clicked ? "nav-menu active" : "nav-menu"}>
-                {MenuItemsData.map((item, index) => {
+                {MenuItemsData.map((item) => {
                     return (
                         <li>
-                            <a  className={item.cName}
+                            <a className={item.cName}
                                 href={item.url}>
                                 {item.title}
                             </a>

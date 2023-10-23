@@ -15,10 +15,10 @@ class Navbar extends Component {
 
     render() {
         return (
-            <nav className="NavbarItems">
+            <nav className="navbar">
                 <Title />
-                <Burger state={ this.state } handleClick={ this.handleClick } />
-                <MenuItems state={ this.state } handleClick={ this.handleClick } />
+                <Burger state={this.state} handleClick={this.handleClick} />
+                <MenuItems state={this.state} handleClick={this.handleClick} />
                 <Button>Sign Up</Button>
             </nav>
         )
