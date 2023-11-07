@@ -7,7 +7,7 @@ class MenuItems extends Component {
             <ul className={this.props.state.clicked ? "nav-menu active" : "nav-menu"}>
                 {MenuItemsData.map((item) => {
                     return (
-                        <li>
+                        <li key={item.title}>
                             <a className={item.cName}
                                 href={item.url}>
                                 {item.title}
