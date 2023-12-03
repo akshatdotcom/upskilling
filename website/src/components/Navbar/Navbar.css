@@ -19,6 +19,12 @@
     font-size: 1.6rem;
 }
 
+.logo {
+    fill: none;
+    width: 12rem;
+    margin-top: 0.5rem;
+}
+
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(6, auto);

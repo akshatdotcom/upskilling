@@ -22,7 +22,7 @@ class QuizResults extends Component {
                                             {item.careerName}
                                         </div>
                                         <div className="quiz-result-text-element annual-salary">
-                                            <div>{"Annual Salary: "}</div>
+                                            <div>Annual Salary: </div>
                                             <div>{item.annualSalary}</div>
                                         </div>
                                         <div className="quiz-result-text-element educatio-required">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './QuizButton.css'
 
 const QUIZSTYLES = [
@@ -15,10 +16,12 @@ export const QuizButton = ({
     const checkButtonStyle = QUIZSTYLES.includes(buttonStyle) ? buttonStyle : QUIZSTYLES[0]
 
     return (
-        <button className={`quiz-btn ${checkButtonStyle}`}
-            onClick={onClick}
-            type={type}>
-            {children}
-        </button>
+        <Link to ="/quiz">
+            <button className={`quiz-btn ${checkButtonStyle}`}
+                onClick={onClick}
+                type={type}>
+                {children}
+            </button>    
+        </Link>
     )
 }
