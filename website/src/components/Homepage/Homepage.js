@@ -15,7 +15,7 @@ class Homepage extends Component {
                     <img className="runner-icon" src={runner} alt="Runner" />
                 </h1>
                 <main className="homepage-header">
-                    <p> Explore possible career paths within athletics <br></br>using your acheived education.
+                    <p> Explore possible career paths within athletics <br></br>using your achieved education.
                     </p>
                 </main>
                 <div>
