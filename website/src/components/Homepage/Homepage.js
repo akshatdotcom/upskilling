@@ -11,7 +11,7 @@ class Homepage extends Component {
         return (
             <div className="homepage-screen">
                 <h1 className="homepage-title">
-                    Discover Your New Future
+                    Discover Your New Future.
                     <img className="runner-icon" src={runner} alt="Runner" />
                 </h1>
                 <main className="homepage-header">
