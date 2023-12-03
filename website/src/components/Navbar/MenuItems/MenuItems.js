@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { MenuItemsData } from './MenuItemsData'
+import { Link } from 'react-router-dom'
 
 class MenuItems extends Component {
     render() {
@@ -8,10 +9,9 @@ class MenuItems extends Component {
                 {MenuItemsData.map((item) => {
                     return (
                         <li key={item.title}>
-                            <a className={item.cName}
-                                href={item.url}>
-                                {item.title}
-                            </a>
+                            <Link className={item.cName}
+                                to={item.url}
+                                onClick={this.props.handleClick}>{item.title}</Link>
                         </li>
                     )
                 })}

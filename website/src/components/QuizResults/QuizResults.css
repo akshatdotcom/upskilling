@@ -1,0 +1,128 @@
+.quiz-results {
+    padding: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-result-container {
+    /* display: flex;
+    justify-content: center;
+    height: 150px;
+    padding: 10px; */
+
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+    /* removes bullet points */
+    list-style-type: none;
+
+    /* debug code */
+    /* border: 1px solid red; */
+}
+
+.quiz-result-rank {
+
+    /* Places the circle in the top left corner */
+    position: absolute;
+    margin: -1.5rem;
+
+    background-color: orangered;
+    color: white;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Makes the div a circle */
+    border-radius: 50%;
+
+    /* Sizes the circle properly */
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.quiz-result-box {
+    /* padding-left: 500px;
+    padding-right: 500px; */
+
+    display: flex;
+
+    /* padding: 1rem; */
+    
+    /* debug code */
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: rgb(31, 31, 193);
+}
+
+.quiz-result-text {
+    color: white;
+    margin-left: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.quiz-result-text-element {
+    /* Displays all info inside div in one line */
+    display: flex;
+    flex-direction: row;
+
+    /* Enables the spaces to be shown */
+    white-space: pre-wrap;
+}
+
+.quiz-result-image {
+    width: 100px;
+    padding-left: 1rem;
+    margin: 20px;
+}
+
+.career-name {
+    font-size: 1.5rem;
+}
+
+.bottom-bar {
+
+    width: 80%;
+    height: 4rem;
+    margin: 0 auto;
+
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    border-width: 2px;
+    border-radius: 15px;
+    background-color: orangered;
+}
+
+.quiz-results-button {
+    margin-right: 10px;
+    height: 80%;
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    color: white;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+
+    background-color: orange;
+
+    border-radius: 15px;
+    border-width: 0px;
+    border: none;
+}
