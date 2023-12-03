@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { QuizResultsData } from './QuizResultsData'
 import './QuizResults.css'
+import { Link } from 'react-router-dom'
 import broadcasting from './images/broadcasting.png'
 
 class QuizResults extends Component {

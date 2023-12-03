@@ -3,6 +3,7 @@ import './Navbar.css'
 import Title from './Title'
 import Burger from './Burger'
 import MenuItems from './MenuItems/MenuItems'
+import { Link } from 'react-router-dom'
 import { Button } from './Button/Button'
 
 class Navbar extends Component {
@@ -19,7 +20,9 @@ class Navbar extends Component {
                 <Title />
                 <Burger state={this.state} handleClick={this.handleClick} />
                 <MenuItems state={this.state} handleClick={this.handleClick} />
-                <Button>Sign Up</Button>
+                <Link>
+                    <Button>Login</Button>
+                </Link>
             </nav>
         )
     }
