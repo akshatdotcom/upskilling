@@ -5,7 +5,7 @@ class Title extends Component {
     render() {
         return (
             <h1 className="navbar-title">
-                Upskilling
+                PATHLETE
             </h1>
         )
     }
