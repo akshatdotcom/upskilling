@@ -29,7 +29,7 @@
     position: absolute;
     margin: -1.5rem;
 
-    background-color: orangered;
+    background-color: rgba(204, 85, 0, 1);
     color: white;
 
     font-family: 'Ubuntu', sans-serif;
@@ -58,11 +58,11 @@
     /* debug code */
     border-width: 2px;
     border-radius: 10px;
-    background-color: rgb(31, 31, 193);
+    background-color: rgb(255, 227, 207);
 }
 
 .quiz-result-text {
-    color: white;
+    color: black;
     margin-left: 30px;
     
     display: flex;
@@ -105,7 +105,7 @@
 
     border-width: 2px;
     border-radius: 15px;
-    background-color: orangered;
+    background-color: rgba(255, 198, 157, 1);
 }
 
 .quiz-results-button {
@@ -120,9 +120,14 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.5rem;
 
-    background-color: orange;
+    background-color: rgb(204, 85, 0);
 
     border-radius: 15px;
     border-width: 0px;
     border: none;
+}
+
+button {
+    /* float: right; */
+    margin-left: auto;
 }

@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { QuizResultsData } from './QuizResultsData'
 import './QuizResults.css'
 import broadcasting from './images/broadcasting.png'
+import { CareerQuiz } from '../Quiz/CareerQuiz'
+import { Link } from 'react-router-dom'
 
 class QuizResults extends Component {
 
@@ -30,6 +32,13 @@ class QuizResults extends Component {
                                             <div>{item.educationRequired}</div>
                                         </div>
                                     </div>
+                                    <div style={{ display: 'flex', justifyContent: 'flex-end', flexGrow: 1 }}>
+                                        <button className='quiz-results-button' style={{marginTop: 13}}>
+                                            <Link to='/lesson-plan' style={{textDecoration: 'none', color: 'white'}}>
+                                            View Curriculum
+                                            </Link>                                                     
+                                        </button>
+                                    </div>
                                 </div>
                             </li>
                         )
@@ -42,5 +51,6 @@ class QuizResults extends Component {
         )
     }
 }
+
 
 export default QuizResults

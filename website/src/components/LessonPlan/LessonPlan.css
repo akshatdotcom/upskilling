@@ -1,0 +1,118 @@
+.lesson-plan-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjusts spacing between child elements */
+    align-items: flex-start; /* Aligns children to the start (left) */
+
+    border-width: 2px;
+    font-size: 2rem;
+    padding: 0px;
+    background-color: rgb(255, 227, 207);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns button to the right */
+    align-items: center; /* Centers button vertically */
+    width: 100%;
+}
+
+
+.lesson-plan-box-subtitle {
+    /* padding-left: 500px;
+    padding-right: 500px; */
+
+    display: flex;
+
+    /* padding: 1rem; */
+    
+    /* debug code */
+    border-width: 2px;
+    font-size: 1.5rem;
+    background-color: rgb(255, 227, 207);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* CourseDashboard.css */
+.dashboard-container {
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    color: #333;
+    background-color: white;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 200px; /* Adjust as needed */
+    padding: 20px;
+    color: #cc5500;
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    position: relative; /* For the absolute positioning of the line */
+    height: 83vh; /* Take full height of the viewport */
+  }
+  
+  .navigation .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 2;
+    text-align: center; /* Center text */
+    width: 100%; /* Full width of the sidebar */
+  }
+  
+  
+  .vertical-line {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    height: 90%;
+    left: 200px; /* Adjust this value to match the sidebar width */
+    border-left: 4px solid #cc5500;
+    transform: translateY(-50%); /* Your line color and width */
+  }
+  
+  .course-content {
+    flex-grow: 1;
+    background-color: white;
+    color: #cc5500; /* Your main content background color */
+    padding: 20px;
+    width: 1700px;
+  }
+  
+  .course-header h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    color: #cc5500;
+  }
+  
+  .course-header h2 {
+    font-size: 25px;
+    color: #cc5500;
+    margin: 10px 0;
+  }
+  
+  .horizontal-line {
+    width: 89%;
+    height: 4px;
+    background-color: #cc5500; /* Your line color */
+    margin-bottom: 20px;
+  }
+  
+  .course-list .course-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  
+  .course-icon {
+    margin-right: 15px;
+    font-size: 24px; /* Replace with actual icon sizes */
+  }
+  
