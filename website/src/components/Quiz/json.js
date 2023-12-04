@@ -8,7 +8,7 @@ export const json = {
       "elements": [
        {
         "type": "text",
-        "name": "question1",
+        "name": "major",
         "title": "What is your major?",
         "isRequired": true
        }
@@ -20,7 +20,7 @@ export const json = {
       "elements": [
        {
         "type": "comment",
-        "name": "question2",
+        "name": "interests",
         "title": "What are some of your interests?",
         "description": "Separate each interest with a comma",
         "isRequired": true
@@ -33,7 +33,7 @@ export const json = {
       "elements": [
        {
         "type": "comment",
-        "name": "question3",
+        "name": "hobbies",
         "title": "What are some of your academic hobbies?",
         "description": "Separate each interest with a comma",
         "isRequired": true
@@ -46,7 +46,7 @@ export const json = {
       "elements": [
        {
         "type": "rating",
-        "name": "question4",
+        "name": "social-skills",
         "title": "On a scale of 1-5, how social are you?",
         "description": "1 - Not Social, 5 - Very Social",
         "isRequired": true
@@ -59,24 +59,24 @@ export const json = {
       "elements": [
        {
         "type": "radiogroup",
-        "name": "question5",
+        "name": "timeline",
         "title": "How long do you want to spend learning?",
         "isRequired": true,
         "choices": [
          {
-          "value": "Item 1",
+          "value": "Less than 1 month",
           "text": "Less than 1 month"
          },
          {
-          "value": "Item 2",
+          "value": "Between 1-3 months",
           "text": "Between 1-3 months"
          },
          {
-          "value": "Item 3",
+          "value": "Between 3-6 months",
           "text": "Between 3-6 months"
          },
          {
-          "value": "Item 4",
+          "value": "More than 6 months",
           "text": "More than 6 months"
          }
         ]
