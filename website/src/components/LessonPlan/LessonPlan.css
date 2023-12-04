@@ -4,8 +4,8 @@
     justify-content: space-between; /* Adjusts spacing between child elements */
     align-items: flex-start; /* Aligns children to the start (left) */
 
-    border-width: 2px;
-    font-size: 2rem;
+    border-width: 5px;
+    font-size: 2.2rem;
     padding: 0px;
     background-color: rgb(255, 227, 207);
     font-family: 'Ubuntu', sans-serif;
@@ -16,8 +16,14 @@
     justify-content: flex-end; /* Aligns button to the right */
     align-items: center; /* Centers button vertically */
     width: 100%;
+    margin-top: -30px;
+    padding: 5px;
 }
 
+.lesson-plan-name {
+  margin-left: 40px;
+  margin-top: 20px;
+}
 
 .lesson-plan-box-subtitle {
     /* padding-left: 500px;
@@ -29,7 +35,9 @@
     
     /* debug code */
     border-width: 2px;
-    font-size: 1.5rem;
+    margin-left: 30px;
+    margin-top: -30px;
+    font-size: 1.8rem;
     background-color: rgb(255, 227, 207);
     font-family: 'Ubuntu', sans-serif;
 }
@@ -52,14 +60,14 @@
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
     position: relative; /* For the absolute positioning of the line */
-    height: 83vh; /* Take full height of the viewport */
+    height: 100vh; /* Take full height of the viewport */
   }
   
   .navigation .nav-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 2;
     text-align: center; /* Center text */
     width: 100%; /* Full width of the sidebar */

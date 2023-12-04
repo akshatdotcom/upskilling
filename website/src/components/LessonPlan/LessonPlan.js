@@ -32,13 +32,18 @@ class LessonPlan extends Component {
         
           return (
             <div className="lesson-plan-box">
+                    <div className='lesson-plan-name'>
                         AJ Jha
+                    </div>
                     <br></br>
                     <div className='lesson-plan-box-subtitle'>
                         Economics Major
                     </div>
                     <div className="button-container">
                         <button className="quiz-results-button">Explore More</button>
+                    </div>
+                    <div>
+                      <br></br>
                     </div>
             <div className="dashboard-container">
               <aside className="sidebar">
