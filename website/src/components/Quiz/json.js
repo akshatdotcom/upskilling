@@ -64,19 +64,19 @@ export const json = {
         "isRequired": true,
         "choices": [
          {
-          "value": "Item 1",
+          "value": "Less than 1 month",
           "text": "Less than 1 month"
          },
          {
-          "value": "Item 2",
+          "value": "Between 1-3 months",
           "text": "Between 1-3 months"
          },
          {
-          "value": "Item 3",
+          "value": "Between 3-6 months",
           "text": "Between 3-6 months"
          },
          {
-          "value": "Item 4",
+          "value": "More than 6 months",
           "text": "More than 6 months"
          }
         ]
