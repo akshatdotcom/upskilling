@@ -29,6 +29,7 @@ function render(recommendationsData) {
                                         <div>Education Required: </div>
                                         <div>{item.minEduRequired}</div>
                                     </div>
+                                    
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'flex-end', flexGrow: 1 }}>
                                     <button className='quiz-results-button' style={{marginTop: 13}}>
@@ -65,13 +66,15 @@ function QuizResults() {
 
     useEffect(() => {
         getRecommendations();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const getRecommendations = () => {
         axios.post(url, body, {headers})
              .then((response) => {
             if (response.status === 200) {
-                const recommendations = response.data.result.response.data.pathways;
+                console.log(response.data.result.response);
+                const recommendations = response.data.result.response.pathways;
                 setRecommendationsData(recommendations);
             }
         }).catch((error) => {
