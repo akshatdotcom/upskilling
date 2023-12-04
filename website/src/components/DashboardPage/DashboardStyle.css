@@ -1,0 +1,22 @@
+/* DashboardPage.css */
+.dashboard {
+}
+
+.rectangle {
+    position: relative;
+    width: 100%;
+    height: 161px; /* Adjust the height of the rectangle as needed */
+    background-color: #FFE3CF; /* Set the background color */
+}
+
+.rectangle p {
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    transform: translateY(-50%);
+    color: #000000; /* Set the text color */
+    padding: 0 20px; /* Add padding to the text for better visibility */
+    font-family: 'Ubuntu', sans-serif; /* Set the font-family to Ubuntu */
+    font-size: 35px; /* Set the font size to 35px */
+
+}
