@@ -43,6 +43,7 @@ function SurveyComponent() {
             if (response.status === 200) {
             }
         });
+        document.location.href = '/results'
     });
     return (<Survey model={survey} />);
 }
