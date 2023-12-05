@@ -27,11 +27,11 @@ function render(userInfoData) {
         {userInfoData.major}
       </div>
       <div style={{ width: 206, height: 50, left: 1261, top: 35, position: 'absolute', background: '#CC5500' }} />
-      <div style={{ width: 180, height: 33, left: 1274, top: 47, position: 'absolute', textAlign: 'center', color: '#FFFFFF', fontSize: 20, fontFamily: 'Ubuntu', fontWeight: '400', wordWrap: 'break-word' }}>Explore More!</div>
-      <div style={{ width: 493, height: 35, left: 585, top: 311, position: 'absolute', color: '#CC5500', fontSize: 30, fontFamily: 'Ubuntu', fontWeight: '400', wordWrap: 'break-word' }}>Lesson 1: Python Foundations</div>
-      <div style={{ width: 463, height: 35, left: 589, top: 524, position: 'absolute', color: '#CC5500', fontSize: 30, fontFamily: 'Ubuntu', fontWeight: '400', wordWrap: 'break-word' }}>Lesson 4: Ensemble Techniques</div>
-      <div style={{ width: 393, height: 35, left: 585, top: 382, position: 'absolute', color: '#CC5500', fontSize: 30, fontFamily: 'Ubuntu', fontWeight: '400', wordWrap: 'break-word' }}>Lesson 2: Business Statistics</div>
-      <div style={{ width: 435, height: 35, left: 585, top: 453, position: 'absolute', color: '#CC5500', fontSize: 30, fontFamily: 'Ubuntu', fontWeight: '400', wordWrap: 'break-word' }}>Lesson 3: Supervised Learning</div>
+      <div style={{ width: 180, height: 33, left: 1274, top: 47, right: 100, position: 'absolute', textAlign: 'center', color: '#FFFFFF', fontSize: 20, fontFamily: 'Ubuntu', fontWeight: '400', wordWrap: 'break-word' }}>Explore More!</div>
+      <a href="https://www.coursera.org/learn/foundations-sports-analytics?specialization=sports-analytics"><div className='course-content1'>Lesson 1: Foundations of Sports Analytics</div></a>
+      <a href='https://www.coursera.org/learn/machine-learning-sports-analytics?irclickid=0MJwkuRQOx[…]rtners&utm_source=impact&utm_campaign=259799&utm_content=b2c'><div className='course-content2'>Lesson 4: Intro to Machine Learning in Sports Analytics</div></a>
+      <a href='https://www.coursera.org/learn/prediction-models-sports-data?specialization=sports-analytics'><div className='course-content3'>Lesson 2: Prediction Models with Sports Data</div></a>
+      <a href='https://www.coursera.org/learn/wearable-technologies?specialization=sports-analytics'><div className='course-content4'>Lesson 3: Wearable Technologies and Sports Analytics</div></a>
       <span style={{ width: 57, height: 51, left: 497, top: 311, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon">{lessonIcons.python} </span>
       <span style={{ width: 56, height: 50, left: 497, top: 382, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon">{lessonIcons.statistics} </span>
       <span style={{ width: 56, height: 60, left: 497, top: 453, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon">{lessonIcons.learning} </span>
@@ -62,7 +62,7 @@ function LessonPlan() {
   }, []);
 
   const getUserInfo = () => {
-    axios.post(url, body, {headers})
+    axios.post(url, body, { headers })
       .then((response) => {
         if (response.status === 200) {
           const userInfo = response.data.result.response;

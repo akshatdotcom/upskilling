@@ -83,15 +83,74 @@
     border-left: 4px solid #cc5500;
     transform: translateY(-50%); /* Your line color and width */
   }
-  
-  .course-content {
-    flex-grow: 1;
-    background-color: white;
-    color: #cc5500; /* Your main content background color */
-    padding: 20px;
-    width: 1700px;
+  .course-content1 {
+    width: 700px;
+    height: 35px;
+    left: 585px;
+    top: 311px;
+    position: absolute;
+    color: #CC5500;
+    font-size: 30px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+
+  .course-content2 {
+    width: 800px;
+    height: 35px;
+    left: 585px;
+    top: 524px;
+    position: absolute;
+    color: #CC5500;
+    font-size: 30px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+
+  .course-content3 {
+    width: 800px;
+    height: 35px;
+    left: 585px;
+    top: 382px;
+    position: absolute;
+    color: #CC5500;
+    font-size: 30px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+
+  .course-content4 {
+    width: 800px;
+    height: 35px;
+    left: 585px;
+    top: 453px;
+    position: absolute;
+    color: #CC5500;
+    font-size: 30px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    word-wrap: break-word;
   }
   
+  .course-content1:hover {
+    color: #8e3c01; /* Your main content background color */
+  }
+
+  .course-content2:hover {
+    color: #8e3c01; /* Your main content background color */
+  }
+
+  .course-content3:hover {
+    color: #8e3c01; /* Your main content background color */
+  }
+
+  .course-content4:hover {
+    color: #8e3c01; /* Your main content background color */
+  }
+
   .course-header h1 {
     font-size: 40px;
     margin: 0;
