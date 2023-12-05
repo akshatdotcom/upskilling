@@ -14,7 +14,7 @@ function render(recommendationsData) {
                         <li key={item.rank} className="quiz-result-container">
                             <div className="quiz-result-box">
                                 <div className="quiz-result-rank">{item.rank}</div>
-                                <img className="quiz-result-image" src={broadcasting} alt={item.name} />
+                                <div className="quiz-result-image" src={broadcasting} alt={item.name} />
                                 {/* <div className="quiz-result-image">
                                 </div> */}
                                 <div className="quiz-result-text">
@@ -32,7 +32,7 @@ function render(recommendationsData) {
                                     
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'flex-end', flexGrow: 1 }}>
-                                    <button className='quiz-results-button' style={{marginTop: 38}}>
+                                    <button className='quiz-results-button' style={{marginTop: 24}}>
                                         <Link to='/lesson-plan' style={{textDecoration: 'none', color: 'white'}}>
                                         View Curriculum
                                         </Link>                                                     

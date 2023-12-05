@@ -27,7 +27,7 @@
 
     /* Places the circle in the top left corner */
     position: absolute;
-    margin: -1.5rem;
+    margin: 7px;
 
     background-color: rgba(204, 85, 0, 1);
     color: white;
@@ -53,7 +53,7 @@
 
     display: flex;
 
-    /* padding: 1rem; */
+     padding: 15px;
     
     /* debug code */
     border-width: 2px;
@@ -63,7 +63,7 @@
 
 .quiz-result-text {
     color: black;
-    margin-left: 30px;
+    margin-left: 0px;
     
     display: flex;
     flex-direction: column;
@@ -110,7 +110,7 @@
 
 .quiz-results-button {
     margin-right: 50px;
-    height: 40%;
+    height: 50%;
     width: auto;
     padding-left: 1rem;
     padding-right: 1rem;
