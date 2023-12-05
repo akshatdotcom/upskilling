@@ -85,5 +85,7 @@ export const json = {
       "title": "Timeline"
      }
     ],
+    "showCompletedPage": false,
+    //"navigateToUrl": "/results",
     "headerView": "advanced"
    }
