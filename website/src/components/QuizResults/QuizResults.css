@@ -26,8 +26,7 @@
 .quiz-result-rank {
 
     /* Places the circle in the top left corner */
-    position: absolute;
-    margin: -1.5rem;
+    /* margin: 7px; */
 
     background-color: rgba(204, 85, 0, 1);
     color: white;
@@ -48,12 +47,11 @@
 }
 
 .quiz-result-box {
-    /* padding-left: 500px;
-    padding-right: 500px; */
-
     display: flex;
 
-    /* padding: 1rem; */
+    padding: 1.8rem;
+
+    align-items: center;
     
     /* debug code */
     border-width: 2px;
@@ -63,7 +61,8 @@
 
 .quiz-result-text {
     color: black;
-    margin-left: 30px;
+
+    margin-left: 7rem;
     
     display: flex;
     flex-direction: column;
@@ -83,7 +82,6 @@
 
 .quiz-result-image {
     width: 100px;
-    padding-left: 1rem;
     margin: 20px;
 }
 
@@ -109,8 +107,8 @@
 }
 
 .quiz-results-button {
-    margin-right: 50px;
-    height: 40%;
+    /* margin-right: 50px; */
+    height: 3.5rem;
     width: auto;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -126,9 +124,19 @@
     border-width: 0px;
     border: none;
 }
+
+.quiz-results-button:hover {
+    background-color: black;
+}
+
+.quiz-results-button-text {
+    text-decoration: none;
+    color: white;
+}
+
 .explore-more-button {
-    margin-right: 50px;
-    height: 50%;
+    margin-right: 12px;
+    height: 65%;
     width: auto;
     padding-left: 1rem;
     padding-right: 1rem;

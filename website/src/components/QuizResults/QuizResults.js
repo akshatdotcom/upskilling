@@ -5,7 +5,7 @@ import broadcasting from './images/broadcasting.png'
 import { Link } from 'react-router-dom'
 import axios from "axios";
 
-function render(recommendationsData) {    
+function render(recommendationsData) {
     return (
         <div>
             <ul className="quiz-results">
@@ -14,9 +14,6 @@ function render(recommendationsData) {
                         <li key={item.rank} className="quiz-result-container">
                             <div className="quiz-result-box">
                                 <div className="quiz-result-rank">{item.rank}</div>
-                                <img className="quiz-result-image" src={broadcasting} alt={item.name} />
-                                {/* <div className="quiz-result-image">
-                                </div> */}
                                 <div className="quiz-result-text">
                                     <div className="quiz-result-text-element career-name">
                                         {item.name}
@@ -25,19 +22,17 @@ function render(recommendationsData) {
                                         <div>Annual Salary: </div>
                                         <div>{item.avgSalary}</div>
                                     </div>
-                                    <div className="quiz-result-text-element educatio-required">
+                                    <div className="quiz-result-text-element education-required">
                                         <div>Education Required: </div>
                                         <div>{item.minEduRequired}</div>
                                     </div>
-                                    
+
                                 </div>
-                                <div style={{ display: 'flex', justifyContent: 'flex-end', flexGrow: 1 }}>
-                                    <button className='quiz-results-button' style={{marginTop: 38}}>
-                                        <Link to='/lesson-plan' style={{textDecoration: 'none', color: 'white'}}>
+                                <button className='quiz-results-button'>
+                                    <Link className='quiz-results-button-text' to='/lesson-plan'>
                                         View Curriculum
-                                        </Link>                                                     
-                                    </button>
-                                </div>
+                                    </Link>
+                                </button>
                             </div>
                         </li>
                     )
@@ -70,17 +65,17 @@ function QuizResults() {
     }, []);
 
     const getRecommendations = () => {
-        axios.post(url, body, {headers})
-             .then((response) => {
-            if (response.status === 200) {
-                console.log(response.data.result.response);
-                const recommendations = response.data.result.response.pathways;
-                setRecommendationsData(recommendations);
-            }
-        }).catch((error) => {
-            console.log(error);
-            throw error;
-        });
+        axios.post(url, body, { headers })
+            .then((response) => {
+                if (response.status === 200) {
+                    console.log(response.data.result.response);
+                    const recommendations = response.data.result.response.pathways;
+                    setRecommendationsData(recommendations);
+                }
+            }).catch((error) => {
+                console.log(error);
+                throw error;
+            });
     }
 
     return render(recommendationsData);
