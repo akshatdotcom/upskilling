@@ -8,10 +8,9 @@
  */
 
 
-const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 const axios = require("axios");
-const {onCall} = require("firebase-functions/v2/https");
+const {onCall, HttpsError} = require("firebase-functions/v2/https");
 
 admin.initializeApp();
 
@@ -92,7 +91,7 @@ async function processQuizData(userId) {
   ];
 
   if (!conversation) {
-    throw new functions.https.HttpsError("invalid-arg", "API Error");
+    throw new HttpsError("invalid-arg", "API Error");
   }
 
   const url = "https://api.openai.com/v1/chat/completions";
@@ -121,7 +120,7 @@ async function processQuizData(userId) {
     await db.collection("recommendations").doc(userId).set(json);
     return {response: response.data.choices[0].message.content};
   } else {
-    throw new functions.https.HttpsError("internal", "Request failed.");
+    throw new HttpsError("internal", "Request failed.");
   }
 }
 
@@ -129,9 +128,9 @@ exports.processQuizData = onCall(async (req) => {
   try {
     // Get the user id from req data
     const userId = req.data.userId;
-    return await processQuizData(userId);
+    return processQuizData(userId);
   } catch (error) {
-    throw new functions.https.HttpsError("internal", error.message);
+    throw new HttpsError("internal", error.message);
   }
 });
 
@@ -143,7 +142,7 @@ exports.getRecommendations = onCall(async (req) => {
     const recommendations = doc.data();
     return {response: recommendations};
   } catch (error) {
-    throw new functions.https.HttpsError("internal", error.message);
+    throw new HttpsError("internal", error.message);
   }
 });
 
@@ -154,7 +153,7 @@ exports.uploadQuizData = onCall(async (req) => {
     const quizData = req.data.quizData;
 
     if (!quizData) {
-      throw new functions.https.HttpsError("invalid-arg", "API Error");
+      throw new HttpsError("invalid-arg", "API Error");
     }
 
     // Do more quiz data validation here before proceeding
@@ -166,10 +165,25 @@ exports.uploadQuizData = onCall(async (req) => {
     // Call backend endpoint that processes quiz results
     // Wait for it to finish and return (hopefully 200)
     // If 200, then redirect to results page
-    await processQuizData(userId);
+    processQuizData(userId);
 
     return {response: "Quiz data uploaded successfully."};
   } catch (error) {
-    throw new functions.https.HttpsError("internal", error.message);
+    throw new HttpsError("internal", error.message);
+  }
+});
+
+exports.getUserInfo = onCall(async (req) => {
+  try {
+    const userId = req.data.userId;
+    const db = admin.firestore();
+    const doc = await db.collection("users").doc(userId).get();
+    if (!doc.exists) {
+      throw new HttpsError("invalid-arg", "API Error: user does not exist.");
+    }
+    const user = doc.data();
+    return {response: user};
+  } catch (error) {
+    throw new HttpsError("internal", error.message);
   }
 });
