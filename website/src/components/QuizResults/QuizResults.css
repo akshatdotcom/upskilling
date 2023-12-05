@@ -109,8 +109,26 @@
 }
 
 .quiz-results-button {
-    margin-right: 10px;
-    height: 80%;
+    margin-right: 50px;
+    height: 40%;
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    color: white;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 23px;
+
+    background-color: rgb(204, 85, 0);
+
+    border-radius: 5px;
+    border-width: 0px;
+    border: none;
+}
+.explore-more-button {
+    margin-right: 50px;
+    height: 50%;
     width: auto;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -122,7 +140,7 @@
 
     background-color: rgb(204, 85, 0);
 
-    border-radius: 15px;
+    border-radius: 5px;
     border-width: 0px;
     border: none;
 }

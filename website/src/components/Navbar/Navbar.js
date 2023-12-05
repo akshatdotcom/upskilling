@@ -21,7 +21,7 @@ class Navbar extends Component {
                 <Burger state={this.state} handleClick={this.handleClick} />
                 <MenuItems state={this.state} handleClick={this.handleClick} />
                 <Link>
-                    <Button>Login</Button>
+                    <Button>Welcome AJ!</Button>
                 </Link>
             </nav>
         )
