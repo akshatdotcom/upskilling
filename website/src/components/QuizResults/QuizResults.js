@@ -32,7 +32,7 @@ function render(recommendationsData) {
                                     
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'flex-end', flexGrow: 1 }}>
-                                    <button className='quiz-results-button' style={{marginTop: 13}}>
+                                    <button className='quiz-results-button' style={{marginTop: 38}}>
                                         <Link to='/lesson-plan' style={{textDecoration: 'none', color: 'white'}}>
                                         View Curriculum
                                         </Link>                                                     
@@ -44,7 +44,7 @@ function render(recommendationsData) {
                 })}
             </ul>
             <div className="bottom-bar">
-                <button className="quiz-results-button">Explore More</button>
+                <button className="explore-more-button">Explore More</button>
             </div>
         </div>
     )
