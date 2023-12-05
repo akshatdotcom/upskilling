@@ -1,4 +1,4 @@
-# Upskilling
+# Pathlete
 ## Texas Convergent EdTech Build Team
 ### Members
 - Tech: Aastha Agrawal, Akshat Shah, Samuel Jacob
