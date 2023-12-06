@@ -38,8 +38,8 @@ function render(userInfoData) {
       <a href='https://www.coursera.org/learn/wearable-technologies?specialization=sports-analytics'><div className='course-content4'>Lesson 3: Wearable Technologies and Sports Analytics</div></a>
       <span style={{ width: 20, height: 40, left: 497, top: 311, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon"><img className="icon" src={python} alt="Python"/></span>
       <span style={{ width: 20, height: 50, left: 497, top: 382, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon"><img className="icon" src={ml} alt="machine learning"/> </span>
-      <span style={{ width: 20, height: 60, left: 497, top: 453, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon"><img className="icon" src={prediction} alt="prediction"/> </span>
-      <span style={{ width: 61, height: 56, left: 495, top: 524, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon"><img className="icon" src={wearables} alt="wearables"/> </span>
+      <span style={{ width: 20, height: 60, left: 497, top: 453, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon"><img className="icon" src={wearables} alt="wearables"/> </span>
+      <span style={{ width: 61, height: 56, left: 495, top: 524, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon"><img className="icon" src={prediction} alt="prediction"/> </span>
 
     </div>
 
