@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './LessonPlan.css'
+import python from  "./python.png";
+import ml from  "./machine_learning.png";
+import prediction from  "./prediction.png";
+import wearables from  "./wearables.png";
 import axios from 'axios'
 
 function render(userInfoData) {
@@ -32,10 +36,10 @@ function render(userInfoData) {
       <a href='https://www.coursera.org/learn/machine-learning-sports-analytics?irclickid=0MJwkuRQOx[…]rtners&utm_source=impact&utm_campaign=259799&utm_content=b2c'><div className='course-content2'>Lesson 4: Intro to Machine Learning in Sports Analytics</div></a>
       <a href='https://www.coursera.org/learn/prediction-models-sports-data?specialization=sports-analytics'><div className='course-content3'>Lesson 2: Prediction Models with Sports Data</div></a>
       <a href='https://www.coursera.org/learn/wearable-technologies?specialization=sports-analytics'><div className='course-content4'>Lesson 3: Wearable Technologies and Sports Analytics</div></a>
-      <span style={{ width: 57, height: 51, left: 497, top: 311, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon">{lessonIcons.python} </span>
-      <span style={{ width: 56, height: 50, left: 497, top: 382, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon">{lessonIcons.statistics} </span>
-      <span style={{ width: 56, height: 60, left: 497, top: 453, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon">{lessonIcons.learning} </span>
-      <span style={{ width: 61, height: 56, left: 495, top: 524, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon">{lessonIcons.ensemble} </span>
+      <span style={{ width: 20, height: 40, left: 497, top: 311, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon"><img className="icon" src={python} alt="Python"/></span>
+      <span style={{ width: 20, height: 50, left: 497, top: 382, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon"><img className="icon" src={ml} alt="machine learning"/> </span>
+      <span style={{ width: 20, height: 60, left: 497, top: 453, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon"><img className="icon" src={prediction} alt="prediction"/> </span>
+      <span style={{ width: 61, height: 56, left: 495, top: 524, position: 'absolute', mixBlendMode: 'darken' }} className="course-icon"><img className="icon" src={wearables} alt="wearables"/> </span>
 
     </div>
 
