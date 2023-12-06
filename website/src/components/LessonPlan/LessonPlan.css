@@ -179,7 +179,10 @@
   }
   
   .course-icon {
-    margin-right: 15px;
-    font-size: 24px; /* Replace with actual icon sizes */
+    margin-right: 15px; /* Replace with actual icon sizes */
+  }
+
+  .icon {
+    width: 40px;
   }
   
