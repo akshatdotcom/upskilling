@@ -4,6 +4,7 @@ import python from  "./python.png";
 import ml from  "./machine_learning.png";
 import prediction from  "./prediction.png";
 import wearables from  "./wearables.png";
+import student from "./student.png";
 import axios from 'axios'
 
 function render(userInfoData) {
@@ -24,6 +25,7 @@ function render(userInfoData) {
       <div style={{ width: 279, height: 54, left: 496, top: 129.01, position: 'absolute', textAlign: 'center', color: '#CC5500', fontSize: 40, fontFamily: 'Ubuntu', fontWeight: '500', wordWrap: 'break-word' }}>My Courses</div>
       <div style={{ width: 494, height: 32, left: 526, top: 183.01, position: 'absolute', color: '#DE7C3D', fontSize: 30, fontFamily: 'Ubuntu', fontWeight: '400', wordWrap: 'break-word' }}>Sports Analytics</div>
       <div style={{ width: 1512, height: 100, left: 0, top: 0, position: 'absolute', background: '#FFE3CF' }} />
+      <div><img className='student-icon' src={student} alt="student"/></div>
       <div style={{ width: 310, height: 44, left: 140, top: 19, position: 'absolute', color: 'black', fontSize: 30, fontFamily: 'Ubuntu', fontWeight: '400', wordWrap: 'break-word' }}>
         {userInfoData.firstName} {userInfoData.lastName}
       </div>

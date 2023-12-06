@@ -182,6 +182,13 @@
     margin-right: 15px; /* Replace with actual icon sizes */
   }
 
+  .student-icon {
+    width: 90px;
+    margin-left: 40px;
+    margin-top: 5px;
+    position: absolute;
+
+  }
   .icon {
     width: 40px;
   }
